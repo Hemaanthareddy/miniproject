@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  table,td,th{
+border:1px solid black;
+border-collapse:collapse;
+}
+{box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.submitbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<form action="action_page.php">
+  <div class="container">
+    <h1>Manage Results</h1>
+   
+    <hr>
+    <p>View Classes info</p>
+    <br>
+    <form>
+Show<select name="Show">ontrioss
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<select>
+   </form>
+<br>
+<br>
+   <table style="width:100%" border="1px" >
+        <tr>
+            <th>Student Name</th>
+            <th>Roll No</th>
+            <th>Class</th>
+            <th>Reg Date</th>
+             <th>Status</th>
+              <th>Action</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>001</td>
+            <td>3rd year</td>
+            <td>01/06/2019</td>
+            <td>Active</td>
+            <td>--</td>
+        </tr>
+        <tr>
+           <td>Chitti</td>
+            <td>002</td>
+            <td>3rd year</td>
+            <td>01/06/2019</td>
+            <td>Block</td>
+            <td>--</td>
+        </tr>
+       
+    </table>
+
+   
+    
+
+
+    <button type="submit" class="submitbtn">Submit</button>
+  </div>
+
+
+</form>
+</body>
+</html>
