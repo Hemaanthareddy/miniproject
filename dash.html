@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0 px;
+  font-family: "Lato", sans-serif;
+  
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #4d4e4f;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4d4e4f;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+div.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="dashboard.html" style="color: #ffffff; font-size: 25px;"><img src="https://i.pinimg.com/736x/b3/cc/d5/b3ccd57b054a73af1a0d281265b54ec8.jpg" width="20 px" height="20 px">  Dashboard</a>
+  <hr color=black>
+  <a href="#studentclasses"></a>
+<div class="dropdown">
+  <button class="dropbtn" style="color: #ffffff; font-size: 20px; background-color: #4d4e4f;width: 100%; text-align:left"><img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/000/214/original/file.png" height="20 px" width="20 px">  Student Classes</button>
+  <div class="dropdown-content">
+    <a href="createclass.html" target="right" >Create Class</a>
+    <a href="manageclass.html" target="right">Manage classes</a>
+  </div>
+</div>
+<hr color=#4d4e4f>
+  
+<div class="dropdown">
+  <button class="dropbtn" style="color: #ffffff; font-size: 20px; background-color: #4d4e4f;width: 100%;text-align:left; "><img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/000/214/original/file.png" height="20 px" width="20 px">  Subject</button>
+  <div class="dropdown-content">
+    <a href="createsubject.html" target="right">Create Subject</a>
+    <a href="managesubjects.html" target="right">Manage Subjects</a>
+	<a href="addsubcombo.html" target="right">Add Subject Combination</a>
+	<a href="managesubcombo.html" target="right">Manage Subjects Combination</a>
+  </div>
+</div>
+<hr color=#4d4e4f>
+
+<div class="dropdown">
+  <button class="dropbtn" style="color: #ffffff; font-size: 20px; background-color: #4d4e4f; width: 100%;text-align:left;"><img src="https://cdn3.iconfinder.com/data/icons/education/512/students-512.png" height="20 px" width="20 px">  Lecturer</button>
+  <div class="dropdown-content">
+    <a href="addlecturer.html" target="right">Add Lecturers</a>
+    <a href="managelecturers.html" target="right">Manage Lecturers</a>
+	
+  </div>
+</div><hr color=#4d4e4f>
+<div class="dropdown">
+  <button class="dropbtn" style="color: #ffffff; font-size: 20px; background-color: #4d4e4f; width: 100%;text-align:left;"><img src="https://cdn3.iconfinder.com/data/icons/education/512/students-512.png" height="20 px" width="20 px">  Student</button>
+  <div class="dropdown-content">
+    <a href="addstudent.html" target="right">Add Students</a>
+    <a href="managestudents.html" target="right">Manage Students</a>
+	
+  </div>
+</div><hr color=#4d4e4f>
+<div class="dropdown">
+  <button class="dropbtn" style="color: #ffffff; font-size: 20px; background-color: #4d4e4f;width: 100%;text-align:left; "><img src="https://www.freeiconspng.com/thumbs/results-icon-png/results-icon-png-13.png" height="20 px" width="20 px">  Results</button>
+  <div class="dropdown-content">
+    <a href="addresult.html" target="right">Add Result</a>
+    <a href="manageresults.html" target="right">Manage Result</a>
+
+	</div>
+</div>
+<hr color=#4d4e4f>
+<a href="apc.html" target="right" style="display:inline; margin-left=20 px;"><button href="apc.html" class="dropbtn" style="color: #ffffff;margin-left=200 px; font-size: 18px; background-color: #4d4e4f;width: 95%;text-align:left; "><img src="https://newcastlebeach.org/images/reset-password-icon-3.jpg" height="20 px" width="20 px">  Admin Password Change</button></a>
+
+
+</body>
+</html>
