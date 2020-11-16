@@ -1,0 +1,122 @@
+ #headdiv{
+             background-color:#141313;
+	
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 30px;
+        }
+	a{
+	color:#9c9c9c;
+	text-decoration: none;
+	
+	}
+        	a:hover{
+	color:#ffffff;
+	}
+        img{
+	float: left;
+    	height: 35px;
+    	margin: 3px 10px 3px 0;
+    	vertical-align: middle;
+    	border: 0;
+	}
+         #login{
+	color:#9c9c9c;
+	float:right;
+	}
+        #login:hover{
+	color: #FFFFFF;
+	}
+	body{
+	background-color:#D3D3D3;
+	background-image: url("https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg");
+	
+	background-repeat: no-repeat;
+	background-size: 1400px 670px;
+	}
+td,th {
+	background-color: #ffffff;
+	height: 10px;
+			}
+#tablog1{
+background-color: #FFFFFF;
+border-collapse: separate;
+margin-top:10px;
+margin-left:150px;
+float:left;
+border-style:groove;
+
+}
+
+#tablog2{
+background-color: #FFFFFF;
+border-collapse: separate;
+margin-top:30px;
+margin-right:150px;
+float:right;
+border-style:groove;
+
+}
+
+caption {
+
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+#roledrop{
+    font-size:20px;
+    min-width: 215px;
+    height:40px;
+}
+
+#butlog1{
+border: none;
+display: inline;
+  font-size: 20px;
+  cursor: pointer;
+ padding: 10px 20px;
+font-family:Helvetica;
+float:left;
+margin-top:280px;
+margin-left:-230px;
+}
+#butlog2{
+border: none;
+display: inline;
+  font-size: 20px;
+  cursor: pointer;
+ padding: 10px 20px;
+font-family:Helvetica;
+float:right;
+margin-top:220px;
+margin-right:-230px;
+}
+#butlog1:hover,#butlog1:hover{
+    background-color: #979899;
+    float:left;
+
+}
+#input-1,#input-2,#input-3{
+box-sizing: border-box;
+ width: auto;
+overflow: visible;
+padding: 1px 2px;
+letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    appearance: textfield;
+height:40px;
+    font-size:14pt;
+font-family:Helvetica;
+}
+#input-1{
+autofocus;
+}
