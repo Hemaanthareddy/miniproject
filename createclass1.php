@@ -18,9 +18,9 @@ if(isset($_REQUEST["submit"]))
 	{
 		@$classname=$_REQUEST["clsname"];
 		@$classnum=$_REQUEST["clsnum"];
-		@$section=$_REQUEST["sec"];
 		
-		$sql = "INSERT INTO createclass (clsname, clsnum, sec) VALUES ('$classname', '$classnum', '$section')";
+		
+		$sql = "INSERT INTO class (clsname, clsnum) VALUES ('$classname', '$classnum')";
 		
 		
 	}
