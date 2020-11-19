@@ -57,7 +57,6 @@
 						<td><?php echo $rows["Email Id"];?></td>
 						<td><?php echo $rows["Gender"];?></td>
 						<td><?php echo $rows["DOB"];?></td>
-						<td><?php echo $rows["id"];?></td>
 						<td><?php echo $rows["Password"];?></td>
 						<td><?php echo $rows["RegDate"];?></td>
 						<td><?php echo $rows["Status"];?></td>		
