@@ -65,7 +65,7 @@ a {
 </style>
 </head>
 <body>
-<form action="action_page.php">
+<form action="addstudent1.php" method="post">
   <div class="container">
     <h1>Add Student</h1>
    
@@ -100,16 +100,16 @@ a {
     <input type="text" placeholder="mm/dd/yyyy" name="dob" id="dob" required>
 	
 	<label for="stupass"><b>Password</b></label>
-    <input type="text" placeholder="Enter new Password" name="stupass" id="stupass" required>
+    <input type="password" placeholder="Enter new Password" name="stupass" id="stupass" required>
 
 
     <label for="regdt"><b>Reg Date</b></label>
     <input type="text" placeholder="dd/mm/yyyy" name="regdt" id="regdt" required>
 
     <label for="status"><b>Status</b></lable>
-     <input type="radio" id="active" name="active" value="male">
+     <input type="radio" id="active" name="status" value="active">
      <label for="active">Active</label>
-     <input type="radio" id="block" name="block" value="block">
+     <input type="radio" id="block" name="status" value="block">
      <label for="block">Block</label>
 
    
@@ -117,10 +117,11 @@ a {
     <hr>
 
 
-    <button type="submit" class="submitbtn">Add</button>
+      <input align="centre" type="submit" name="submit" value="Login" colspan="2" width="50px">
   </div>
 
 
 </form>
 </body>
 </html>
+
