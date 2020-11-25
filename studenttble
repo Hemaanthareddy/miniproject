@@ -1,0 +1,27 @@
+<?php
+	SESSION_START()
+	$servername="localhost";
+	$usename="root"; 
+	$password=""; 
+	$dbname="SRM";
+	$connect=MySQLi_connect($servername,$usename,$password) or die("could not connect");
+	$db=mysqli_select_db($connect,$dbname);
+	include("pro 1.php");
+	if(isset($_REQUEST["submit"]))
+	{
+	$_SESSION['username']=$_REQUEST["username"];
+	@$username=$_SESSION["username"];
+	@$password=$_REQUEST["password"];
+	$extract=mysqli_query($connect,"select * from tableresult2 where StudentId='$username' && StudentName='$password'");
+	$rowcount=mysqli_num_rows($extract);
+	if($rowcount==true)
+	{
+		 header("location:studentresults.php");
+
+	}
+	else
+	{
+		echo "You are not student";
+	}
+	}
+?>
